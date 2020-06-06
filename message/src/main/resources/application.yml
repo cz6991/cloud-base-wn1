@@ -1,0 +1,25 @@
+spring:
+  mail:
+    host: smtp.163.com
+    username: wjcz783577172@163.com
+    password: QUHRQHWVHEIDUTWA
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+
+  application:
+    name: message
+  redis:
+    host: 10.211.55.3
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+server:
+  port: 6060

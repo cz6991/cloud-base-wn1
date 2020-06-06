@@ -1,0 +1,11 @@
+server:
+  port: 8761
+
+
+eureka:
+  client:
+    region: dianxin #电信区
+
+  instance:
+    metadata-map:
+      zone: zone-1 #电信一区

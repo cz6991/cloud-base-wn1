@@ -1,0 +1,10 @@
+server:
+  port: 8762
+
+eureka:
+  client:
+    region: dianxin
+
+  instance:
+    metadata-map:
+      zone: zong-2

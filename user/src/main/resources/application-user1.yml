@@ -1,0 +1,17 @@
+server:
+  port: 4041
+
+eureka:
+  client:
+    region: dianxin
+    prefer-same-zone-eureka: true
+    availability-zones:
+      dianxin: zone-2,zone-3
+
+  instance:
+    metadata-map:
+      zone: zone-1
+
+order:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.

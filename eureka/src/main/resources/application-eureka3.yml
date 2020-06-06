@@ -1,0 +1,9 @@
+server:
+  port: 8763
+eureka:
+  client:
+    region: wangtong
+
+  instance:
+    metadata-map:
+      zone: zone-1

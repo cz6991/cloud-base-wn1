@@ -1,0 +1,33 @@
+
+
+eureka:
+  client:
+    service-url:
+      #声明注册地址
+      defaultZone: http://localhost:8761/eureka
+    #开启注册功能
+    register-with-eureka: true
+
+
+spring:
+  application:
+    name: user
+  redis:
+    host: 10.211.55.3
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+  rabbitmq:
+    host: 47.103.205.98
+    port: 5672
+    username: spring
+    password: spring
+
+
+feign:
+  hystrix:
+    enabled: true
